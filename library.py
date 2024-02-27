@@ -56,7 +56,7 @@ class Library:
         books = self.file.readlines()
         for book in books:
             if book.split(",")[0] == title:
-                print(f"{book.split(",")[0]} by {book.split(",")[1]} removed from library")
+                print(f'{book.split(",")[0]} by {book.split(",")[1]} removed from library')
                 books.remove(book)
         self.file.seek(0)
         self.file.truncate()
